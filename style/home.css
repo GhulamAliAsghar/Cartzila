@@ -53,6 +53,10 @@
     }
 }
 
+footer{
+    background-color: #222934;
+}
+
 @media (max-width: 576px) {
     .hero-btn {
         margin-left: 195px;
