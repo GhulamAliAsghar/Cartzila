@@ -1,10 +1,9 @@
-.hero-sec {
-    background-color: #F5F7FA;
+.nav-items{
+    margin-left: 230px;
 }
 
-
-.hero-btn {
-    margin-left: 600px;
+.hero-sec {
+    background-color: #F5F7FA;
 }
 
 .service {
@@ -59,12 +58,13 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .hero-btn {
-        margin-left: 195px;
+
+    .nav-items{
+        margin-left: 0px;
     }
 
     .service {
-        margin-left: -15px;
+        margin-left: 15px;
         margin-top: 50px;
     }
 

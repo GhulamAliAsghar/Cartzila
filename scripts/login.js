@@ -1,4 +1,4 @@
-async function apiData(params) {
+async function apiData() {
     let userData = null
 
 

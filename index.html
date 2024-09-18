@@ -16,30 +16,83 @@
 
 <body>
     <header class="container sticky-top shadow rounded-bottom-5 bg-white">
-        <div class="navbar d-flex justify-content-between align-items-baseline px-2">
-            <div>
-                <h1>
-                    Cartzilla
-                </h1>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cartzila</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-items ms-sm-0 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/signin.html">Signin</a></li>
+                                <li><a class="dropdown-item" href="/pages/signup.html">Singup</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Components</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <i class="bi bi-sun px-2"></i>
+                        <i class="bi bi-search px-2"></i>
+                        <i class="bi bi-cart px-2"></i>
+                    </div>
+                </div>
             </div>
-            <div>
-                <ul class="d-flex list-unstyled gap-5 fw-light">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Account</li>
-                    <li>Pages</li>
-                    <li>Docs</li>
-                    <li>Components</li>
-                </ul>
-            </div>
-            <div class="">
-                <ul class="d-flex list-unstyled gap-3 fw-light">
-                    <li><i class="bi bi-cart"></i></li>
-                    <li><i class="bi bi-search"></i></li>
-                    <li><a class="text-decoration-none text-black" href="/pages/signin.html"><i class="bi bi-person"></i></a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <div class="hero-sec py-5 container-fluid">
@@ -55,10 +108,15 @@
                 $1250.00
             </h4>
         </span>
-        <button type="button" class="btn btn-dark hero-btn rounded-5 px-4 py-2 fs-5">Buy Now</button>
+        <div class="text-center">
+            <span>
+                <button type="button" class="btn btn-dark hero-btn rounded-5 px-4 py-2 fs-5">Buy Now</button>
+
+            </span> 
+        </div>
     </div>
     <div class="container-fluid">
-        <div class="services row gap-4 p-5 ms-5 my-5">
+        <div class="services row gap-2 p-5 mx-sm-5 mx-3 my-5">
             <div class="col-lg-2 col-sm-6 service rounded-circle">
                 <img class="img-fluid" src="/images/1.png" alt="">
                 <h4 class="text-center mt-5 ">
@@ -220,10 +278,10 @@
     </div>
     <div class="cards container container-sm my-5">
         <div class="row text-center my-5">
-            <div class="card-1 col-lg-6 rounded-start-5">
+            <div class="card-1 col-lg-6">
                 <img class="img-fluid" src="/images/08.png" alt="">
             </div>
-            <div class="card-2 col-lg-6 py-5 rounded-end-5">
+            <div class="card-2 col-lg-6 py-5">
                 <p class="text-white">
                     Best Deals
                 </p>
@@ -331,6 +389,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="/scripts/home.js"></script>
 </body>
 
 </html>
