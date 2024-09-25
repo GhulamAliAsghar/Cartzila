@@ -14,7 +14,7 @@ document.getElementById("form").addEventListener("submit", function (params) {
         alert("Regietration Successfull")
 
     } else {
-        alert("Simething Went Wrong!")
+        alert("Something Went Wrong!")
     }
 
 })
