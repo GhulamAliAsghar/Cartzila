@@ -6,8 +6,17 @@
     background-color: #F5F7FA;
 }
 
-.cart {
+.cart{
     display: none;
+    height: 520px;
+    width: 400px;
+    top: 60px;
+    left: 825px;
+}
+
+.cart-btn{
+    width: 45px;
+    height: 45px;
 }
 
 .service {

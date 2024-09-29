@@ -1,3 +1,9 @@
 .login-img{
     background-color: #B5D0F0;
 }
+
+@media (max-width : 576px){
+    .right-sec{
+        display: none;
+    }
+}

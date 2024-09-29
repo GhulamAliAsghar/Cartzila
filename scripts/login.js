@@ -16,7 +16,7 @@ async function apiData() {
         let mail = document.getElementById("userMail").value
         let password = document.getElementById("userPassword").value
 
-        let searchUser = userData.find(user => user.email===mail && user.password===password)
+        let searchUser = userData.filter(user => user.email===mail && user.password===password)
 
         if (searchUser) {
             window.location.href = "/index.html";

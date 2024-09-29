@@ -13,6 +13,8 @@ document.getElementById("form").addEventListener("submit", function (params) {
 
         alert("Regietration Successfull")
 
+        window.location.href = "/index.html";
+
     } else {
         alert("Something Went Wrong!")
     }
