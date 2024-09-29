@@ -1,4 +1,5 @@
-document.getElementById("form").addEventListener("submit", function (params) {
+document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault()
 
     let email = document.getElementById("userMail").value
     let password = document.getElementById("userPassword").value
@@ -13,7 +14,7 @@ document.getElementById("form").addEventListener("submit", function (params) {
 
         alert("Regietration Successfull")
 
-        window.location.href = "/index.html";
+        window.location.href = "/pages/signin.html"
 
     } else {
         alert("Something Went Wrong!")

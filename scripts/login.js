@@ -5,7 +5,6 @@ async function apiData() {
     try {
         let users = await fetch("https://fakestoreapi.com/users")
         userData = await users.json()
-        console.log(userData);
     } catch (error) {
 
     }
@@ -13,15 +12,22 @@ async function apiData() {
     document.getElementById("loginForm").addEventListener("submit", function (e) {
         e.preventDefault()
 
+        let localUser = localStorage.getItem("userInfo")
+        let stringedObj = JSON.parse(localUser)
+
         let mail = document.getElementById("userMail").value
         let password = document.getElementById("userPassword").value
 
-        let searchUser = userData.filter(user => user.email===mail && user.password===password)
+        let searchUser = userData.find(user => user.email===mail && user.password===password)
 
         if (searchUser) {
             window.location.href = "/index.html";
         } else {
-            alert("Email or Password not found")
+         if (stringedObj.userMail === mail && stringedObj.userPassword === password) {
+            window.location.href = "/index.html";
+         } else {
+            alert("User or password not found")
+         }
         }
 
     })
